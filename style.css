@@ -1,0 +1,181 @@
+:root{
+  --color-one: rgb(3, 109, 26);
+  --color-two: #EFE014;
+  --color-three: #fd7e14;
+  --color-four: #f7b80a;
+  
+}
+body{
+  font-family:'Anuphan';
+  overflow-x: hidden;
+}
+/*header*/
+header{
+  background-image: linear-gradient(45deg, var(--color-three) 20%, var(--color-four));
+}
+header .navbar{
+  padding-bottom: 2rem;
+}
+#brand{
+  font:700 2rem 'roboto slab';
+  color: var(--color-one);
+}
+#navbar li a{
+  color: var(--color-one);
+}
+.navbar-dark .navbar-toggler-icon{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28003, 109, 26, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-dark .navbar-toggler{
+  border-style: none;
+}
+
+/*header-content*/
+h1, h1 span, h2{
+  font: 700 2rem 'roboto slab';
+  color: var(--color-one);
+}
+h1 span{
+  padding: 5px;
+  border-radius: 5px;
+  color: var(--color-two);
+  background-color: var(--color-one);
+}
+h2{
+  font-style: italic;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+.download-button{
+  background-color: var(--color-one);
+  color: var(--color-two);
+}
+.figure{
+  display: flex;
+  justify-content: end;
+}
+#cat-render{
+  width: 30%;
+  position: absolute;
+  
+}
+.container-fluid{
+  padding: 1% 10% 20%;
+}
+
+/*feature section*/
+section.feature{
+  padding: 5% 0;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.feature-box{
+  padding: 7%;
+  text-align: center;
+}
+.feature-box i{
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  color: var(--color-three);
+  transition: color 0.5s;
+}
+  .feature-box i:hover{
+    color: #b4490b;
+    transition: color 0.5s;
+  }
+.note{
+  font:lighter 0.8rem 'anuphan';
+  color: #8a8a8a;
+}
+
+/*testimonials section*/
+.testimonials{
+  padding: 10rem 5%;
+  text-align: center;
+  background-color: var(--color-one);
+}
+.testimonial h3{
+  font: 400 1.2rem "roboto slab";
+  color: #FFF;
+}
+.testimonial img{
+  display: inline;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.testimonial em{
+  display: inline;
+  font-size: 1rem;
+  color: var(--color-three);
+}
+
+/*cards section*/
+.cards{
+  padding: 7%;
+}
+.cards h2{
+  font: 700 1.8rem 'roboto slab';
+  color: var(--color-three);
+}
+.Scratched{
+  color: #8a8a8a;
+  text-decoration: line-through;
+}
+.card-body button{
+  border-style: none;
+  background-color: var(--color-one);
+}
+
+/*donwload section*/
+.download{
+  background-color: var(--color-three);
+  padding: 15% 5%;
+}
+.download h2{
+  
+  font-style: normal;
+}
+.download button{
+  border-style: none;
+  color: var(--color-two);
+  background-color: var(--color-one);
+}
+
+/*footer section*/
+footer{
+  padding: 10% 7%;
+}
+footer div.icons{
+  color: var(--color-one);
+}
+footer p a{
+  text-decoration: none;
+  color: var(--color-one);
+}
+
+/*media query*/
+@media screen and (max-width: 375px){
+  #brand{
+    font-size: 1.5rem;
+  }
+  
+}
+@media screen and (max-width: 768px){
+  .figure{
+    justify-content: center;
+  }
+
+  #cat-render{
+    padding-top: 2rem;
+    position: static;
+    width: 75%;
+  }
+
+  .container-fluid{
+    padding-bottom: 0;
+  }
+}
+
